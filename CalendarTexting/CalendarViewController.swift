@@ -34,6 +34,10 @@ class CalendarViewController: UIViewController,UICollectionViewDelegate,UICollec
         }
     }
     
+
+    @IBOutlet var DOW: [UILabel]!
+    
+    
     @IBOutlet weak var CalendarCVC: UICollectionView!{
         didSet {
 //            self.CalendarCVC.allowsSelection = true
@@ -64,10 +68,18 @@ class CalendarViewController: UIViewController,UICollectionViewDelegate,UICollec
         cell.backgroundColor = UIColor.clear
         cell.dateLabel.text = "\(date0.daysAdded(addDays: indexPath.row).dayNumber())"
         cell.addGestureRecognizer(UITapGestureRecognizer(target: self,action: #selector(self.touchCell(sender:))))
-
+        if indexPath.row == 0 {
+            // Place the label days of week
+            labelsDOW(iniDate: cell.date!)
+        }
         return cell
     }
-
+    func labelsDOW(iniDate:Date) {
+        DOW[0].text = iniDate.DayOfWeekInicial()
+        for n in 1...6 {
+            DOW[n].text = iniDate.daysAdded(addDays: n).DayOfWeekInicial()
+        }
+    }
     func updateCalendar(){
         date0 = date.date_0()
         month = calendar.component(.month, from: date)
@@ -90,12 +102,7 @@ class CalendarViewController: UIViewController,UICollectionViewDelegate,UICollec
         }
         
     }
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        self.Test1.text = date0.daysAdded(addDays: indexPath.row).description
-//
-//        print("Index Path = \(indexPath)")
-//        print(self.CalendarCVC.indexPathsForSelectedItems!)
-//    }
+    
 }
 
 extension Date {
@@ -129,5 +136,10 @@ extension Date {
         // Get day of week of today's date
         let dayOfWeek = Calendar.current.component(.weekday, from: self)
         return Calendar.current.date(byAdding: .day, value: dayOfWeek, to: self)!
+    }
+    func DayOfWeekInicial() -> String {
+        // Added 021520 to get the initial of the day of week
+        let dayOfWeek = Calendar.current.component(.weekday, from: self)
+        return calendar.veryShortWeekdaySymbols[dayOfWeek-1]
     }
 }
