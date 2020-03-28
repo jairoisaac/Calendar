@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CEA61B7230CB06300FF7D92 /* CalendarTexting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarTexting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEA61B7230CB06300FF7D92 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEA61BA230CB06300FF7D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CEA61BC230CB06300FF7D92 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3CEA61BF230CB06300FF7D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		3CEA61AE230CB06300FF7D92 = {
 			isa = PBXGroup;
 			children = (
-				3CEA61B9230CB06300FF7D92 /* CalendarTexting */,
+				3CEA61B9230CB06300FF7D92 /* Calendar */,
 				3CEA61B8230CB06300FF7D92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		3CEA61B8230CB06300FF7D92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CEA61B7230CB06300FF7D92 /* CalendarTexting.app */,
+				3CEA61B7230CB06300FF7D92 /* Calendar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3CEA61B9230CB06300FF7D92 /* CalendarTexting */ = {
+		3CEA61B9230CB06300FF7D92 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
 				3CEA61BA230CB06300FF7D92 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				3CEA61C6230CB06600FF7D92 /* LaunchScreen.storyboard */,
 				3CEA61C1230CB06300FF7D92 /* CalendarTexting.xcdatamodeld */,
 			);
-			path = CalendarTexting;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CEA61B6230CB06300FF7D92 /* CalendarTexting */ = {
+		3CEA61B6230CB06300FF7D92 /* Calendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CEA61CC230CB06600FF7D92 /* Build configuration list for PBXNativeTarget "CalendarTexting" */;
+			buildConfigurationList = 3CEA61CC230CB06600FF7D92 /* Build configuration list for PBXNativeTarget "Calendar" */;
 			buildPhases = (
 				3CEA61B3230CB06300FF7D92 /* Sources */,
 				3CEA61B4230CB06300FF7D92 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = CalendarTexting;
+			name = Calendar;
 			productName = CalendarTexting;
-			productReference = 3CEA61B7230CB06300FF7D92 /* CalendarTexting.app */;
+			productReference = 3CEA61B7230CB06300FF7D92 /* Calendar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3CEA61B2230CB06300FF7D92 /* Build configuration list for PBXProject "CalendarTexting" */;
+			buildConfigurationList = 3CEA61B2230CB06300FF7D92 /* Build configuration list for PBXProject "Calendar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CEA61B6230CB06300FF7D92 /* CalendarTexting */,
+				3CEA61B6230CB06300FF7D92 /* Calendar */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NNHT4PPEPU;
-				INFOPLIST_FILE = CalendarTexting/Info.plist;
+				INFOPLIST_FILE = Calendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NNHT4PPEPU;
-				INFOPLIST_FILE = CalendarTexting/Info.plist;
+				INFOPLIST_FILE = Calendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CEA61B2230CB06300FF7D92 /* Build configuration list for PBXProject "CalendarTexting" */ = {
+		3CEA61B2230CB06300FF7D92 /* Build configuration list for PBXProject "Calendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CEA61CA230CB06600FF7D92 /* Debug */,
@@ -342,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CEA61CC230CB06600FF7D92 /* Build configuration list for PBXNativeTarget "CalendarTexting" */ = {
+		3CEA61CC230CB06600FF7D92 /* Build configuration list for PBXNativeTarget "Calendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CEA61CD230CB06600FF7D92 /* Debug */,

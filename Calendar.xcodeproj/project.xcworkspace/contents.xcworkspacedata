@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CalendarTexting.xcodeproj">
+      location = "self:/Users/jairomillan/Developer/CalendarTesting/Calendar.xcodeproj">
    </FileRef>
 </Workspace>
